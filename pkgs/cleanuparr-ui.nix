@@ -7,13 +7,13 @@
 
 let
   pname = "cleanuparr";
-  version = "2.10.3";
+  version = "2.10.8";
 
   src = fetchFromGitHub {
     owner = "Cleanuparr";
     repo = "Cleanuparr";
     rev = "v${version}";
-    hash = "sha256-ViLvjKItlgvE77aVUmUt1LNofHpPlDoGDZl1Dn2EiZQ=";
+    hash = "sha256-F20pDTq19e24/SkZlbrUoz5tLglIvN8pQj8NbR7TcYo=";
   };
 in
 buildNpmPackage {
@@ -25,7 +25,7 @@ buildNpmPackage {
 
   nodejs = nodejs_26;
 
-  npmDepsHash = "sha256-HVA869ahw3PS9/a9JLhHS8KieioHAdRYjp2U47WcmVU=";
+  npmDepsHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
 
   # `ng build` writes to dist/ui/browser (Angular application builder layout).
   installPhase = ''
